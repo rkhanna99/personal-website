@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url(font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 
@@ -43,7 +50,6 @@
 /* Box Model */
 
 	*, *:before, *:after {
-		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
@@ -211,14 +217,12 @@
 
 	.row {
 		border-bottom: solid 1px transparent;
-		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
 
 	.row > * {
 		float: left;
-		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
@@ -1576,13 +1580,10 @@
 		}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-			-moz-animation: none !important;
 			-webkit-animation: none !important;
-			-ms-animation: none !important;
 			animation: none !important;
-			-moz-transition: none !important;
 			-webkit-transition: none !important;
-			-ms-transition: none !important;
+			-o-transition: none !important;
 			transition: none !important;
 		}
 
@@ -1797,9 +1798,8 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: #323037;
 		border-radius: 4px;
@@ -1889,7 +1889,8 @@
 			-ms-pointer-events: none;
 			pointer-events: none;
 			background-color: #666 !important;
-			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+			-webkit-box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+			        box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
 			color: #fff !important;
 			cursor: default;
 			opacity: 0.25;
@@ -1901,7 +1902,8 @@
 		button.alt,
 		.button.alt {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+			-webkit-box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
+			        box-shadow: inset 0 0 0 2px rgba(144, 144, 144, 0.25);
 			color: #484848 !important;
 		}
 
@@ -2101,7 +2103,8 @@
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
-			box-shadow: none;
+			-webkit-box-shadow: none;
+			        box-shadow: none;
 		}
 
 		input[type="text"]:focus,
@@ -2110,7 +2113,8 @@
 		select:focus,
 		textarea:focus {
 			border-color: #f32853;
-			box-shadow: 0 0 0 1px #f32853;
+			-webkit-box-shadow: 0 0 0 1px #f32853;
+			        box-shadow: 0 0 0 1px #f32853;
 		}
 
 	.select-wrapper {
@@ -2222,7 +2226,8 @@
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
 			border-color: #f32853;
-			box-shadow: 0 0 0 1px #f32853;
+			-webkit-box-shadow: 0 0 0 1px #f32853;
+			        box-shadow: 0 0 0 1px #f32853;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2343,7 +2348,8 @@
 
 			.image.captioned h3 {
 				background-color: #fff;
-				box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+				-webkit-box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
+				        box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.15);
 				display: block;
 				padding: 2em 1em;
 			}
@@ -2777,7 +2783,8 @@
 	#header {
 		background-color: #fff;
 		border-bottom: solid 1px rgba(144, 144, 144, 0.25);
-		box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.05);
+		-webkit-box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.05);
+		        box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.05);
 		color: #484848;
 		cursor: default;
 		font-size: 1.25em;
@@ -2827,9 +2834,8 @@
 				}
 
 					#header nav ul li a {
-						-moz-transition: color 0.2s ease-in-out;
 						-webkit-transition: color 0.2s ease-in-out;
-						-ms-transition: color 0.2s ease-in-out;
+						-o-transition: color 0.2s ease-in-out;
 						transition: color 0.2s ease-in-out;
 						color: #666;
 						display: inline-block;
@@ -2846,7 +2852,8 @@
 
 					#header nav ul li .button {
 						border-color: rgba(144, 144, 144, 0.25);
-						box-shadow: none;
+						-webkit-box-shadow: none;
+						        box-shadow: none;
 						height: 3em;
 						line-height: 2.9em;
 						margin-bottom: 0;
@@ -2871,7 +2878,8 @@
 		#header.alt {
 			background-color: transparent;
 			border: 0;
-			box-shadow: none;
+			-webkit-box-shadow: none;
+			        box-shadow: none;
 			height: 3.25em;
 			line-height: 3.25em;
 			position: absolute;
@@ -2959,14 +2967,15 @@
 		}
 
 	#navPanel {
-		-moz-transform: translateX(-20em);
 		-webkit-transform: translateX(-20em);
 		-ms-transform: translateX(-20em);
 		transform: translateX(-20em);
-		-moz-transition: -moz-transform 0.5s ease, visibility 0.5s;
 		-webkit-transition: -webkit-transform 0.5s ease, visibility 0.5s;
-		-ms-transition: -ms-transform 0.5s ease, visibility 0.5s;
+		-webkit-transition: visibility 0.5s, -webkit-transform 0.5s ease;
+		transition: visibility 0.5s, -webkit-transform 0.5s ease;
+		-o-transition: transform 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, visibility 0.5s;
+		transition: transform 0.5s ease, visibility 0.5s, -webkit-transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
 		visibility: hidden;
 		overflow-y: auto;
@@ -3011,9 +3020,8 @@
 
 		#navPanel .close {
 			text-decoration: none;
-			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
+			-o-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
@@ -3065,11 +3073,11 @@
 			}
 
 		#navPanel.visible {
-			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+			-webkit-box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+			        box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
 
@@ -3180,9 +3188,8 @@
 	}
 
 		#footer a {
-			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
+			-o-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
 			color: #aaa;
 			text-decoration: none;
